@@ -52,7 +52,7 @@ Options -Indexes
 
 ## Контакты для поддержки:
 - GitHub репозиторий: https://github.com/adthxkz/itfusionsite
-- Рабочий email: hello@itfusion.kz
+- Рабочий email: info@itfusion.kz
 
 ---
 Создано: 22 июля 2025

@@ -44,54 +44,37 @@
 
     <section class="section bg-light-gray">
         <div class="container">
-             <h2 class="text-center mb-50">Наша команда</h2>
-             <div class="team-grid-expanded">
-                
-                <div class="team-card-expanded">
-                    <img src="/img/adil_gabit.jpg" alt="Фото Ғабит Әділ">
-                    <h4>Ғабит Әділ</h4>
-                    <span class="team-role">CEO, Founder, IT-Architect</span>
+            <h2 class="text-center mb-50">Наша экспертиза</h2>
+            <div class="feature-grid feature-grid-4-cols">
+                <div class="feature-card feature-card-centered">
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>Сертификация Bitrix24</h4>
+                    <p class="text-sm">Официальные сертифицированные партнеры Bitrix24 с глубокой экспертизой в настройке и кастомизации.</p>
                 </div>
-
-                <div class="team-card-expanded">
-                    <img src="https://via.placeholder.com/120x120.png?text=Фото" alt="Фото Кемер Қуаныш">
-                    <h4>Кемер Қуаныш</h4>
-                    <span class="team-role">[Должность сотрудника]</span>
+                <div class="feature-card feature-card-centered">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI-Технологии</h4>
+                    <p class="text-sm">Пионеры внедрения искусственного интеллекта в бизнес-процессы компаний Казахстана.</p>
                 </div>
-
-                <div class="team-card-expanded">
-                    <img src="https://via.placeholder.com/120x120.png?text=Фото" alt="Фото Бентбай Қанат">
-                    <h4>Бентбай Қанат</h4>
-                    <span class="team-role">[Должность сотрудника]</span>
+                <div class="feature-card feature-card-centered">
+                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Веб-технологии</h4>
+                    <p class="text-sm">Современный стек разработки: PHP, JavaScript, интеграции с API и облачными сервисами.</p>
                 </div>
-
-                <div class="team-card-expanded">
-                    <img src="https://via.placeholder.com/120x120.png?text=Фото" alt="Фото Завгородний Никита">
-                    <h4>Завгородний Никита</h4>
-                    <span class="team-role">[Должность сотрудника]</span>
+                <div class="feature-card feature-card-centered">
+                    <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h4>Аналитика и Автоматизация</h4>
+                    <p class="text-sm">Глубокая экспертиза в настройке аналитических систем и автоматизации бизнес-процессов.</p>
                 </div>
-
-                <div class="team-card-expanded">
-                    <img src="https://via.placeholder.com/120x120.png?text=Фото" alt="Фото Сизинцев Владимир">
-                    <h4>Сизинцев Владимир</h4>
-                    <span class="team-role">[Должность сотрудника]</span>
-                </div>
-
-                <div class="team-card-expanded">
-                    <img src="https://via.placeholder.com/120x120.png?text=Фото" alt="Фото Жупаркожаев Арман">
-                    <h4>Жупаркожаев Арман</h4>
-                    <span class="team-role">[Должность сотрудника]</span>
-                </div>
-
-             </div>
+            </div>
         </div>
     </section>
 
     <section class="section cta-section text-center">
         <div class="container">
-            <h2>Давайте создадим что-то великое вместе</h2>
-            <p class="subtitle">Мы всегда открыты к новым идеям и партнерству. Свяжитесь с нами, чтобы обсудить ваш проект.</p>
-            <a href="/contact.php" class="button button-primary">Связаться с нами</a>
+            <h2>Готовы к технологической трансформации?</h2>
+            <p class="subtitle">Давайте обсудим, как IT Fusion может превратить ваш IT-хаос в отлаженную систему для роста бизнеса.</p>
+            <a href="/contact.php" class="button button-primary">Запросить IT-диагностику</a>
         </div>
     </section>
 </main>

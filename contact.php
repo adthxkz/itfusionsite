@@ -38,7 +38,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email:</strong>
-                            <p><a href="mailto:hello@itfusion.kz">hello@itfusion.kz</a></p>
+                            <p><a href="mailto:info@itfusion.kz">info@itfusion.kz</a></p>
                         </div>
                     </div>
 

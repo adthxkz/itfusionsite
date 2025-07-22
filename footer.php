@@ -3,7 +3,7 @@
         <div class="footer-grid">
 
             <div class="footer-column about-col">
-                <a href="index.php"><img src="/img/logo_dark.png" alt="IT Fusion Logo" class="footer-logo"></a>
+                <a href="index.php"><img src="/img/logo_it_dark.png" alt="IT Fusion Logo" class="footer-logo"></a>
                 <p class="footer-tagline">Ваш технологический партнер по трансформации хаоса в систему для роста бизнеса в Казахстане.</p>
             </div>
 
@@ -23,7 +23,7 @@
                 <address>
                     г. Алматы, Назарбаева 28а<br>
                     <a href="tel:+77764290300">+7 (776) 429-03-00</a><br>
-                    <a href="mailto:hello@itfusion.kz">hello@itfusion.kz</a>
+                    <a href="mailto:info@itfusion.kz">info@itfusion.kz</a>
                 </address>
             </div>
 

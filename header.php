@@ -7,7 +7,7 @@
     <meta name="description" content="<?php echo $pageDescription; ?>">
     
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="icon" href="/img/qc-logo2.png">
+    <link rel="icon" href="/img/logo_it.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>	
 	
@@ -17,7 +17,7 @@
 <header class="site-header-new">
     <div class="container header-container-new">
         <div class="logo-new">
-            <a href="/index.php"><img src="/img/qc-logo2.png" alt="IT Fusion - Слияние Бизнеса и Технологий"></a>
+            <a href="/index.php"><img src="/img/logo_it.png" alt="IT Fusion - Слияние Бизнеса и Технологий"></a>
         </div>
         <nav class="main-nav-new">
 			<ul>

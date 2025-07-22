@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // =================================================================
+    // БЛОК 0: Sticky header
+    // =================================================================
+    const siteHeader = document.querySelector('.site-header-new');
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', function() {
+        if (!siteHeader) return;
+        if (window.scrollY > 30) {
+            siteHeader.classList.add('sticky-active');
+        } else {
+            siteHeader.classList.remove('sticky-active');
+        }
+    });
+
+    // =================================================================
     // БЛОК 1: МОБИЛЬНОЕ МЕНЮ С ОВЕРЛЕЕМ
     // =================================================================
     const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -54,4 +68,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-}); 
+});

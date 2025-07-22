@@ -6,9 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo $pageDescription; ?>">
     
+    <!-- SEO: Open Graph -->
+    <meta property="og:title" content="IT Fusion | Слияние Бизнеса и Технологий для Системного Роста">
+    <meta property="og:description" content="Трансформируем IT-хаос в систему. Объединяем CRM, веб-разработку и AI-автоматизацию в единую экосистему на базе Bitrix24 для роста вашего бизнеса в Казахстане.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itfusion.kz/">
+    <meta property="og:image" content="/img/logo_dark.png">
+    <meta property="og:locale" content="ru_RU">
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IT Fusion | Слияние Бизнеса и Технологий для Системного Роста">
+    <meta name="twitter:description" content="Трансформируем IT-хаос в систему. Объединяем CRM, веб-разработку и AI-автоматизацию в единую экосистему на базе Bitrix24 для роста вашего бизнеса в Казахстане.">
+    <meta name="twitter:image" content="/img/logo_dark.png">
+    <!-- SEO: Дополнительные -->
+    <link rel="canonical" href="https://itfusion.kz/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IT Fusion">
+    <meta name="copyright" content="IT Fusion, 2025">
+    <meta http-equiv="Content-Language" content="ru">
+    <link rel="icon" type="image/png" href="/img/logo_dark.png">
+    
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="icon" href="/img/logo_it.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/aos.min.css">
+    
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IT Fusion",
+      "url": "https://itfusion.kz/",
+      "logo": "https://itfusion.kz/img/logo_dark.png",
+      "email": "info@itfusion.kz",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "KZ"
+      },
+      "sameAs": [
+        "https://www.facebook.com/itfusion.kz",
+        "https://www.instagram.com/itfusion.kz/"
+      ]
+    }
+    </script>
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://itfusion.kz/"
+        }
+      ]
+    }
+    </script>
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какие IT-услуги вы предоставляете?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IT Fusion предоставляет внедрение Bitrix24, автоматизацию бизнес-процессов, разработку сайтов, интеграцию CRM и AI-ассистентов для компаний в Казахстане."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "В каких городах работает IT Fusion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Мы работаем по всему Казахстану: Алматы, Астана, Шымкент и другие города."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как заказать IT-диагностику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Оставьте заявку через форму на сайте или напишите на info@itfusion.kz — мы свяжемся с вами для бесплатной консультации."
+          }
+        }
+      ]
+    }
+    </script>
+    <!-- Schema.org ContactPoint -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IT Fusion",
+      "url": "https://itfusion.kz/",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+7-777-123-4567",
+        "contactType": "customer support",
+        "email": "info@itfusion.kz",
+        "areaServed": "KZ",
+        "availableLanguage": ["ru", "en"]
+      }]
+    }
+    </script>
     </head>	
 	
 <body data-page-name="<?php echo $pageName; ?>">
@@ -42,3 +148,5 @@
         </button>
     </div>
 </header>
+<script src="/js/aos.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function(){if(window.AOS){AOS.init({once:true,duration:700,offset:80});}});</script>

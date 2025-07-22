@@ -1,6 +1,6 @@
 <?php
-    $pageTitle = "О подходе IT Fusion | Трансформация Хаоса в Систему";
-    $pageDescription = "Узнайте о нашем подходе к слиянию IT-технологий. Мы — больше чем IT-компания, мы ваш технологический партнер по системному росту в Казахстане.";
+    $pageTitle = "О подходе IT Fusion | Bitrix24, IT-аутсорсинг, Автоматизация, CRM, AI — Технологический партнер для роста в Казахстане";
+    $pageDescription = "Узнайте о нашем подходе к слиянию IT-технологий: Bitrix24, IT-аутсорсинг, автоматизация, CRM, AI. Мы — ваш технологический партнер по системному росту бизнеса в Казахстане.";
     $pageName = "about";
 
     include 'header.php';
@@ -47,7 +47,12 @@
             <h2 class="text-center mb-50">Наша экспертиза</h2>
             <div class="feature-grid feature-grid-4-cols">
                 <div class="feature-card feature-card-centered">
-                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="feature-icon">
+                        <picture>
+                            <source srcset="/img/bitrix24-interface2.webp" type="image/webp">
+                            <img src="/img/bitrix24-interface2.png" alt="Bitrix24 сертификация Казахстан" style="width:48px;height:48px;">
+                        </picture>
+                    </div>
                     <h4>Сертификация Bitrix24</h4>
                     <p class="text-sm">Официальные сертифицированные партнеры Bitrix24 с глубокой экспертизой в настройке и кастомизации.</p>
                 </div>

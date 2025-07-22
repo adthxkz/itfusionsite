@@ -10,16 +10,16 @@
                 <p class="footer-tagline">Ваш технологический партнер по трансформации хаоса в систему для роста бизнеса в Казахстане.</p>
             </div>
 
-			<div class="footer-column links-col">
-    			<h4>Навигация</h4>
-				<ul>
-    				<li><a href="/about.php">О подходе</a></li>
-    				<li><a href="/it-solutions.php">Направления</a></li>
-    				<li><a href="/cases.php">Кейсы</a></li>
-    				<li><a href="/blog.php">Экспертиза</a></li>
-    				<li><a href="/contact.php">Контакты</a></li>
-				</ul>
-			</div>
+            <div class="footer-column links-col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="/about.php">О подходе</a></li>
+                    <li><a href="/it-solutions.php">Направления</a></li>
+                    <li><a href="/cases.php">Кейсы</a></li>
+                    <li><a href="/blog.php">Экспертиза</a></li>
+                    <li><a href="/contact.php">Контакты</a></li>
+                </ul>
+            </div>
 
             <div class="footer-column contact-col">
                 <h4>Свяжитесь с нами</h4>
@@ -34,7 +34,7 @@
                 <h4>Мы в соцсетях</h4>
                 <div class="social-icons">
                     <a href="https://wa.me/message/LSBN7ON6J7DIJ1" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/qazaqcore.kz?igsh=bmlhMWF5dm54c3hk&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/itfusionkz?igsh=MXJyNWNkeDhzcHRscg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 

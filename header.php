@@ -46,7 +46,7 @@
       },
       "sameAs": [
         "https://www.facebook.com/itfusion.kz",
-        "https://www.instagram.com/itfusion.kz/"
+        "https://www.instagram.com/itfusionkz?igsh=MXJyNWNkeDhzcHRscg%3D%3D&utm_source=qr"
       ]
     }
     </script>
@@ -61,6 +61,18 @@
           "position": 1,
           "name": "Главная",
           "item": "https://itfusion.kz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "IT-направления",
+          "item": "https://itfusion.kz/it-solutions.php"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CRM + Автоматизация",
+          "item": "https://itfusion.kz/crm-implementation.php"
         }
       ]
     }
@@ -132,9 +144,9 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/NaN" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     </head>	
-	
+  
 <body data-page-name="<?php echo $pageName; ?>">
-	
+  
 <div class="page-overlay"></div>
 <header class="site-header-new">
     <div class="container header-container-new">
@@ -145,13 +157,13 @@
             </a>
         </div>
         <nav class="main-nav-new">
-			<ul>
-    			<li><a href="/about.php">О подходе</a></li>
-    			<li><a href="/it-solutions.php">Направления</a></li>
-    			<li><a href="/cases.php">Кейсы</a></li>
-    			<li><a href="/blog.php">Экспертиза</a></li>
-    			<li><a href="/contact.php">Контакты</a></li>
-			</ul>
+      <ul>
+          <li><a href="/about.php">О подходе</a></li>
+          <li><a href="/it-solutions.php">Направления</a></li>
+          <li><a href="/cases.php">Кейсы</a></li>
+          <li><a href="/blog.php">Экспертиза</a></li>
+          <li><a href="/contact.php">Контакты</a></li>
+      </ul>
         </nav>
         <div class="header-cta-new">
             <a href="#" class="button button-primary open-modal-btn">Запросить IT-диагностику</a>
@@ -160,7 +172,7 @@
             <span></span>
             <span></span>
             <span></span>
-			<span></span>
+      <span></span>
         </button>
     </div>
 </header>

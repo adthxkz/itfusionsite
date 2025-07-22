@@ -17,7 +17,10 @@
 <header class="site-header-new">
     <div class="container header-container-new">
         <div class="logo-new">
-            <a href="/index.php"><img src="/img/logo_it.png" alt="IT Fusion - Слияние Бизнеса и Технологий"></a>
+            <a href="/index.php">
+                <img src="/img/logo_it.png" alt="IT Fusion - Слияние Бизнеса и Технологий">
+                <span class="logo-text">IT FUSION</span>
+            </a>
         </div>
         <nav class="main-nav-new">
 			<ul>

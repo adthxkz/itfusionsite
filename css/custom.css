@@ -86,6 +86,14 @@ a:hover { color: var(--color-dark-graphite); }
 .site-header-new { padding: 15px 0; background-color: var(--color-white); border-bottom: 1px solid #EAEAEA; position: sticky; top: 0; z-index: 1000; }
 .header-container-new { display: flex; justify-content: space-between; align-items: center; }
 .logo-new img { height: 60px; display: block; }
+.logo-new a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-text { 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700; 
+    font-size: 20px; 
+    color: var(--color-dark-graphite); 
+    letter-spacing: 1px;
+}
 .main-nav-new { flex-grow: 1; display: flex; justify-content: center; }
 .main-nav-new ul { display: flex; list-style: none; padding: 0; margin: 0; gap: 40px; align-items: center; }
 .main-nav-new ul a { font-weight: 500; font-size: 16px; color: var(--color-text-primary); text-decoration: none; position: relative; padding: 15px 5px; display: block; }
@@ -129,6 +137,14 @@ a:hover { color: var(--color-dark-graphite); }
 .footer-grid { display: grid; grid-template-columns: 2.5fr 1fr 1.5fr 1fr; gap: 40px; padding-bottom: 50px; }
 .footer-column h4 { color: var(--color-white); font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
 .footer-logo { height: 40px; margin-bottom: 15px; }
+.footer-column.about-col a { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 15px; }
+.footer-logo-text { 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700; 
+    font-size: 16px; 
+    color: var(--color-white); 
+    letter-spacing: 1px;
+}
 .footer-column ul { list-style: none; padding: 0; margin: 0; }
 .footer-column ul li { margin-bottom: 10px; }
 .footer-column a { color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease; }

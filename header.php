@@ -166,22 +166,37 @@ include_once __DIR__ . '/' . $langFile;
                 <span class="logo-text">IT FUSION</span>
             </a>
         </div>
+        <?php
+        // Определяем текущий язык по URL
+        $langPrefix = '';
+        if (strpos($_SERVER['REQUEST_URI'], '/kz/') === 0) {
+            $langPrefix = '/kz';
+        } elseif (strpos($_SERVER['REQUEST_URI'], '/en/') === 0) {
+            $langPrefix = '/en';
+        }
+        ?>
         <nav class="main-nav-new">
       <ul>
-          <li><a href="/about.php"><?php echo $lang['about']; ?></a></li>
-          <li><a href="/it-solutions.php"><?php echo $lang['solutions']; ?></a></li>
-          <li><a href="/cases.php"><?php echo $lang['cases']; ?></a></li>
-          <li><a href="/blog.php"><?php echo $lang['blog']; ?></a></li>
-          <li><a href="/contact.php"><?php echo $lang['contact']; ?></a></li>
+          <li><a href="<?php echo $langPrefix; ?>/about.php"><?php echo $lang['about']; ?></a></li>
+          <li><a href="<?php echo $langPrefix; ?>/it-solutions.php"><?php echo $lang['solutions']; ?></a></li>
+          <li><a href="<?php echo $langPrefix; ?>/cases.php"><?php echo $lang['cases']; ?></a></li>
+          <li><a href="<?php echo $langPrefix; ?>/blog.php"><?php echo $lang['blog']; ?></a></li>
+          <li><a href="<?php echo $langPrefix; ?>/contact.php"><?php echo $lang['contact']; ?></a></li>
       </ul>
         </nav>
         <div class="header-cta-new">
             <a href="#" class="button button-primary open-modal-btn"><?php echo $lang['cta']; ?></a>
         </div>
-        <div class="lang-switcher">
-            <a href="/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 || strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? '' : ' active'; ?>">RU</a>
-            <a href="/kz/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 ? ' active' : ''; ?>">KZ</a>
-            <a href="/en/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? ' active' : ''; ?>">EN</a>
+        <div class="lang-switcher" style="display: flex; gap: 8px; align-items: center; margin-left: 16px;">
+            <a href="/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 || strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? '' : ' active'; ?>" title="Русский" style="padding: 4px 8px; border-radius: 4px; background: #f5f5f5; border: 1px solid #e0e0e0; display: flex; align-items: center;">
+                <img src="/img/flag-ru.png" alt="RU" style="width:18px; height:12px; margin-right:4px;">RU
+            </a>
+            <a href="/kz/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 ? ' active' : ''; ?>" title="Қазақша" style="padding: 4px 8px; border-radius: 4px; background: #f5f5f5; border: 1px solid #e0e0e0; display: flex; align-items: center;">
+                <img src="/img/flag-kz.png" alt="KZ" style="width:18px; height:12px; margin-right:4px;">KZ
+            </a>
+            <a href="/en/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? ' active' : ''; ?>" title="English" style="padding: 4px 8px; border-radius: 4px; background: #f5f5f5; border: 1px solid #e0e0e0; display: flex; align-items: center;">
+                <img src="/img/flag-en.png" alt="EN" style="width:18px; height:12px; margin-right:4px;">EN
+            </a>
         </div>
         <button class="mobile-menu-toggle" aria-label="Открыть меню">
             <span></span>

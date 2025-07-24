@@ -43,19 +43,26 @@
                     </div>
 
                     <div class="contact-map">
-                        <div id="floors-widget-container"></div>
-                        <script charset="utf-8" src="https://floors-widget.api.2gis.ru/loader.js" id="dg-floors-widget-loader"></script>
+                        <div id="map-container" style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden;"></div>
+                        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
                         <script charset="utf-8">
-                            DG.FloorsWidget.init({
-                                container: 'floors-widget-container',
-                                width: '100%',
-                                height: '350px',
-                                initData: {
-                                    complexId: '70030076166440751',
-                                    options: {
-                                        locale: 'ru_RU'
+                            new DGWidgetLoader({
+                                "width": "100%",
+                                "height": 350,
+                                "borderColor": "#a3a3a3",
+                                "pos": {
+                                    "lat": 49.948033,
+                                    "lon": 82.628175,
+                                    "zoom": 16
+                                },
+                                "opt": {
+                                    "city": "ust_kamenogorsk"
+                                },
+                                "org": [
+                                    {
+                                        "id": "70030076166440751"
                                     }
-                                }
+                                ]
                             });
                         </script>
                     </div>

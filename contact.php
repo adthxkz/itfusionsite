@@ -43,7 +43,21 @@
                     </div>
 
                     <div class="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.864936443365!2d76.94270087668636!3d43.25418187747799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e9b89414579%3A0x25bde061f2f814d!2z0L3QsNCx0YDQsNC90YHQutCw0Y8g0YPQu9C40LbRjyAyOGE!5e0!3m2!1sru!2skz!4v1719576135314!5m2!1sru!2skz" width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="floors-widget-container"></div>
+                        <script charset="utf-8" src="https://floors-widget.api.2gis.ru/loader.js" id="dg-floors-widget-loader"></script>
+                        <script charset="utf-8">
+                            DG.FloorsWidget.init({
+                                container: 'floors-widget-container',
+                                width: '100%',
+                                height: '350px',
+                                initData: {
+                                    complexId: '70030076166440751',
+                                    options: {
+                                        locale: 'ru_RU'
+                                    }
+                                }
+                            });
+                        </script>
                     </div>
                 </div>
 

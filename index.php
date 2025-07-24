@@ -12,14 +12,15 @@
             <h1>Bitrix24, IT-аутсорсинг и AI: от хаоса к технологической системе</h1>
             <p class="subtitle">Мы не просто IT-подрядчики. Мы ваш <a href="/about.php">технологический партнер</a> в Казахстане, который превращает разрозненные IT-решения (<a href="/crm-implementation.php">CRM</a>, <a href="/it-solutions.php">Bitrix24</a>, <a href="/ai-assistants.php">AI</a>, <a href="/it-solutions.php">автоматизация</a>) в единую, управляемую экосистему для роста.</p>
             <a href="/about.php" class="button button-primary">Узнать о нашем подходе</a>
-<main>
-    <section class="section page-hero text-center" style="background-color: #f5f7fa;">
-        <div class="container">
-            <h1>IT Fusion — Инновационные IT-решения для бизнеса</h1>
-            <p class="subtitle">Внедрение AI, CRM, автоматизация, мобильные приложения, веб-разработка</p>
         </div>
     </section>
 
+    <section class="section competencies-section" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Технологическое усиление IT-функций бизнеса: Bitrix24, CRM, AI, автоматизация</h2>
+            <p class="subtitle" style="max-width: 800px; margin-bottom: 50px;">Мы берем IT-инфраструктуру компаний и превращаем её в мощный инструмент роста через глубокую интеграцию современных технологий: Bitrix24, CRM, AI-ассистенты, автоматизация, веб-разработка.</p>
+            <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="feature-card" style="padding: 30px;" data-aos="zoom-in" data-aos-delay="100">
                     <div class="feature-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
                     <h4><a href="/crm-implementation.php" style="color:inherit;text-decoration:none;">CRM + Автоматизация (Bitrix24, AI)</a></h4>
                     <p>Превращаем хаотичные продажи в высокотехнологичную систему с полной автоматизацией воронки на базе <strong>Bitrix24</strong> и AI-помощниками. 

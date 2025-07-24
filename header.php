@@ -147,6 +147,16 @@
   
 <body data-page-name="<?php echo $pageName; ?>">
   
+<?php
+// Определение языка по директории
+$langFile = 'lang_ru.php';
+if (strpos($_SERVER['REQUEST_URI'], '/kz/') === 0) {
+    $langFile = 'lang_kz.php';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/en/') === 0) {
+    $langFile = 'lang_en.php';
+}
+include_once __DIR__ . '/' . $langFile;
+?>
 <div class="page-overlay"></div>
 <header class="site-header-new">
     <div class="container header-container-new">
@@ -158,15 +168,20 @@
         </div>
         <nav class="main-nav-new">
       <ul>
-          <li><a href="/about.php">О подходе</a></li>
-          <li><a href="/it-solutions.php">Направления</a></li>
-          <li><a href="/cases.php">Кейсы</a></li>
-          <li><a href="/blog.php">Экспертиза</a></li>
-          <li><a href="/contact.php">Контакты</a></li>
+          <li><a href="/about.php"><?php echo $lang['about']; ?></a></li>
+          <li><a href="/it-solutions.php"><?php echo $lang['solutions']; ?></a></li>
+          <li><a href="/cases.php"><?php echo $lang['cases']; ?></a></li>
+          <li><a href="/blog.php"><?php echo $lang['blog']; ?></a></li>
+          <li><a href="/contact.php"><?php echo $lang['contact']; ?></a></li>
       </ul>
         </nav>
         <div class="header-cta-new">
-            <a href="#" class="button button-primary open-modal-btn">Запросить IT-диагностику</a>
+            <a href="#" class="button button-primary open-modal-btn"><?php echo $lang['cta']; ?></a>
+        </div>
+        <div class="lang-switcher">
+            <a href="/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 || strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? '' : ' active'; ?>">RU</a>
+            <a href="/kz/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/kz/') === 0 ? ' active' : ''; ?>">KZ</a>
+            <a href="/en/index.php" class="lang-btn<?php echo strpos($_SERVER['REQUEST_URI'], '/en/') === 0 ? ' active' : ''; ?>">EN</a>
         </div>
         <button class="mobile-menu-toggle" aria-label="Открыть меню">
             <span></span>

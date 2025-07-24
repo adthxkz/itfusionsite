@@ -3,15 +3,7 @@
     $pageDescription = "Как мы превратили операционный хаос в медицинском центре в отлаженную систему с AI-ассистентом и получили 28.7% конверсию записей.";
     $pageName = "case-study-ai-bot-medical";
 
-    // Универсальное определение языка
-    $langCode = 'ru';
-    if (strpos($_SERVER['REQUEST_URI'], '/kz/') === 0) {
-        $langCode = 'kz';
-    } elseif (strpos($_SERVER['REQUEST_URI'], '/en/') === 0) {
-        $langCode = 'en';
-    }
-    include dirname(__DIR__) . "/lang_{$langCode}.php";
-    include dirname(__DIR__) . '/header.php'; // Универсальный путь
+    include '../header.php'; // Обратите внимание на ../
 ?>
 
 <main>
@@ -71,4 +63,4 @@
     </section>
 </main>
 
-<?php include dirname(__DIR__) . '/footer.php'; ?> // Универсальный путь
+<?php include '../footer.php'; ?> // Обратите внимание на ../

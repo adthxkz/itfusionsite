@@ -43,28 +43,7 @@
                     </div>
 
                     <div class="contact-map">
-                        <div id="map-container" style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden;"></div>
-                        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-                        <script charset="utf-8">
-                            new DGWidgetLoader({
-                                "width": "100%",
-                                "height": 350,
-                                "borderColor": "#a3a3a3",
-                                "pos": {
-                                    "lat": 49.948033,
-                                    "lon": 82.628175,
-                                    "zoom": 16
-                                },
-                                "opt": {
-                                    "city": "ust_kamenogorsk"
-                                },
-                                "org": [
-                                    {
-                                        "id": "70030076166440751"
-                                    }
-                                ]
-                            });
-                        </script>
+                        <iframe src="https://2gis.kz/ust_kamenogorsk/firm/70030076166440751?m=82.628175%2C49.948033%2F16" width="100%" height="350" frameborder="0" style="border-radius: 12px;"></iframe>
                     </div>
                 </div>
 

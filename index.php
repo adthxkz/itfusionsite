@@ -12,15 +12,115 @@
             <h1>Bitrix24, IT-аутсорсинг и AI: от хаоса к технологической системе</h1>
             <p class="subtitle">Мы не просто IT-подрядчики. Мы ваш <a href="/about.php">технологический партнер</a> в Казахстане, который превращает разрозненные IT-решения (<a href="/crm-implementation.php">CRM</a>, <a href="/it-solutions.php">Bitrix24</a>, <a href="/ai-assistants.php">AI</a>, <a href="/it-solutions.php">автоматизация</a>) в единую, управляемую экосистему для роста.</p>
             <a href="/about.php" class="button button-primary">Узнать о нашем подходе</a>
+<main>
+    <section class="section page-hero text-center" style="background-color: #f5f7fa;">
+        <div class="container">
+            <h1>IT Fusion — Инновационные IT-решения для бизнеса</h1>
+            <p class="subtitle">Внедрение AI, CRM, автоматизация, мобильные приложения, веб-разработка</p>
         </div>
     </section>
 
-    <section class="section competencies-section" data-aos="fade-up">
-        <div class="container text-center">
-            <h2>Технологическое усиление IT-функций бизнеса: Bitrix24, CRM, AI, автоматизация</h2>
-            <p class="subtitle" style="max-width: 800px; margin-bottom: 50px;">Мы берем IT-инфраструктуру компаний и превращаем её в мощный инструмент роста через глубокую интеграцию современных технологий: Bitrix24, CRM, AI-ассистенты, автоматизация, веб-разработка.</p>
-            <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <div class="feature-card" style="padding: 30px;" data-aos="zoom-in" data-aos-delay="100">
+    <!-- Ядро FAQ -->
+    <section class="section faq-core-section">
+      <div class="faq-core-wrapper">
+        <div class="faq-core">
+          <span>Что такое Qazaq Core / Clinic App?</span>
+          <span>Для какого типа бизнеса подходит платформа?</span>
+          <span>Зачем мобильное приложение, если есть сайт и Instagram?</span>
+          <span>Будет ли приложение оформлено в стиле моей клиники?</span>
+          <span>Как работает онлайн-запись?</span>
+          <span>Смогут ли администраторы управлять расписанием?</span>
+          <span>Есть ли функция онлайн-оплаты?</span>
+          <span>Как работает программа лояльности?</span>
+          <span>Насколько сложен процесс внедрения?</span>
+          <span>Где будут храниться данные клиентов?</span>
+          <span>Можно ли интегрировать с моей CRM?</span>
+          <span>Из чего складывается стоимость?</span>
+          <span>Что входит в техподдержку?</span>
+          <span>Как начать работу с вами?</span>
+        </div>
+        <div class="faq-core-center"></div>
+      </div>
+      <style>
+        .faq-core-section {
+          background: radial-gradient(circle at center, #f5f7fa 60%, #e0e6ef 100%);
+          padding: 80px 0 60px 0;
+          position: relative;
+          z-index: 1;
+        }
+        .faq-core-wrapper {
+          position: relative;
+          width: 420px;
+          height: 420px;
+          margin: 0 auto;
+        }
+        .faq-core-center {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 120px;
+          height: 120px;
+          background: linear-gradient(135deg, #ffd700 60%, #fffbe6 100%);
+          border-radius: 50%;
+          box-shadow: 0 0 40px 10px #ffd70044;
+          z-index: 2;
+        }
+        .faq-core {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 380px;
+          height: 380px;
+          pointer-events: none;
+        }
+        .faq-core span {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          font-size: 1.1rem;
+          color: #222;
+          font-weight: 500;
+          white-space: nowrap;
+          opacity: 0.8;
+          filter: blur(0.5px);
+          transition: opacity 0.3s;
+        }
+        .faq-core span:hover {
+          opacity: 1;
+          filter: none;
+        }
+      </style>
+      <script>
+        // Анимация вращения ядра FAQ
+        document.addEventListener('DOMContentLoaded', function() {
+          const spans = document.querySelectorAll('.faq-core span');
+          const centerX = 190, centerY = 190, radius = 120;
+          const total = spans.length;
+          function setPositions(time) {
+            for (let i = 0; i < total; i++) {
+              // Каждый вопрос движется по своей орбите с разной скоростью и фазой
+              const angle = ((360 / total) * i + time * (0.5 + i * 0.07)) % 360;
+              const rad = angle * Math.PI / 180;
+              const r = radius + 18 * Math.sin(time/40 + i);
+              const x = centerX + r * Math.cos(rad);
+              const y = centerY + r * Math.sin(rad);
+              spans[i].style.left = x + 'px';
+              spans[i].style.top = y + 'px';
+              spans[i].style.opacity = 0.7 + 0.3 * Math.cos(time/30 + i);
+            }
+          }
+          let t = 0;
+          function animate() {
+            setPositions(t);
+            t += 1;
+            requestAnimationFrame(animate);
+          }
+          animate();
+        });
+      </script>
+    </section>
                     <div class="feature-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
                     <h4><a href="/crm-implementation.php" style="color:inherit;text-decoration:none;">CRM + Автоматизация (Bitrix24, AI)</a></h4>
                     <p>Превращаем хаотичные продажи в высокотехнологичную систему с полной автоматизацией воронки на базе <strong>Bitrix24</strong> и AI-помощниками. 

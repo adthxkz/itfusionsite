@@ -43,13 +43,15 @@
                     </div>
 
                     <div class="contact-map">
-                        <div class="map-container">
-                            <iframe src="https://2gis.kz/ust_kamenogorsk/geo/82.628175%2C49.948033%2F16?queryState=center%2F82.628175%2C49.948033%2Fzoom%2F16" width="100%" height="300" frameborder="0" style="border-radius: 12px; border: 1px solid #e2e8f0;"></iframe>
-                        </div>
-                        <div class="map-link">
-                            <a href="https://2gis.kz/ust_kamenogorsk/search/%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2092" target="_blank" class="button button-secondary" style="margin-top: 15px; display: inline-block;">
-                                <i class="fas fa-map-marker-alt"></i> Открыть в 2ГИС
-                            </a>
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Наш офис</h4>
+                                <p>г. Усть-Каменогорск<br>ул. Казахстана, 92-59</p>
+                                <a href="https://2gis.kz/ust_kamenogorsk/search/%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0%2092" target="_blank" class="button button-primary">
+                                    <i class="fas fa-external-link-alt"></i> Построить маршрут
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

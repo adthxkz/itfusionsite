@@ -7,47 +7,190 @@
     <meta name="description" content="<?php echo $pageDescription; ?>">
     
     <!-- SEO: Open Graph -->
-    <meta property="og:title" content="IT Fusion | Слияние Бизнеса и Технологий для Системного Роста">
-    <meta property="og:description" content="Трансформируем IT-хаос в систему. Объединяем CRM, веб-разработку и AI-автоматизацию в единую экосистему на базе Bitrix24 для роста вашего бизнеса в Казахстане.">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://itfusion.kz/">
-    <meta property="og:image" content="/img/logo_dark.png">
+    <meta property="og:url" content="https://itfusion.kz<?php echo $_SERVER['REQUEST_URI']; ?>">
+    <meta property="og:image" content="https://itfusion.kz/img/logo_it.png">
+    <meta property="og:site_name" content="IT Fusion">
     <meta property="og:locale" content="ru_RU">
+    
     <!-- SEO: Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IT Fusion | Слияние Бизнеса и Технологий для Системного Роста">
-    <meta name="twitter:description" content="Трансформируем IT-хаос в систему. Объединяем CRM, веб-разработку и AI-автоматизацию в единую экосистему на базе Bitrix24 для роста вашего бизнеса в Казахстане.">
-    <meta name="twitter:image" content="/img/logo_dark.png">
-    <!-- SEO: Дополнительные -->
-    <link rel="canonical" href="https://itfusion.kz/">
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="https://itfusion.kz/img/logo_it.png">
+    <meta name="twitter:site" content="@itfusionkz">
+    
+    <!-- SEO: Дополнительные теги -->
+    <link rel="canonical" href="https://itfusion.kz<?php echo $_SERVER['REQUEST_URI']; ?>">
     <meta name="robots" content="index, follow">
     <meta name="author" content="IT Fusion">
-    <meta name="copyright" content="IT Fusion, 2025">
+    <meta name="copyright" content="IT Fusion, <?php echo date('Y'); ?>">
+    <meta name="keywords" content="CRM внедрение, автоматизация бизнеса, веб-разработка, AI ассистенты, Bitrix24, IT решения Казахстан, системы управления">
     <meta http-equiv="Content-Language" content="ru">
-    <link rel="icon" type="image/png" href="/img/logo_dark.png">
+    <meta name="geo.region" content="KZ">
+    <meta name="geo.placename" content="Усть-Каменогорск">
+    <meta name="geo.position" content="49.948033;82.628175">
+    <meta name="ICBM" content="49.948033, 82.628175">
+    <link rel="icon" type="image/png" href="/img/logo_it.png">
+    <link rel="apple-touch-icon" href="/img/logo_it.png">
+    
+    <!-- Performance & Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#2563EB">
+    <meta name="msapplication-TileColor" content="#2563EB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn-ru.bitrix24.kz">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="icon" href="/img/logo_it.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/aos.min.css">
     
-    <!-- Schema.org Organization -->
+    <!-- Enhanced Schema.org Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "IT Fusion",
-      "url": "https://itfusion.kz/",
-      "logo": "https://itfusion.kz/img/logo_dark.png",
-      "email": "info@itfusion.kz",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "KZ"
-      },
-      "sameAs": [
-        "https://www.facebook.com/itfusion.kz",
-        "https://www.instagram.com/itfusionkz?igsh=MXJyNWNkeDhzcHRscg%3D%3D&utm_source=qr"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://itfusion.kz/#organization",
+          "name": "IT Fusion",
+          "url": "https://itfusion.kz/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://itfusion.kz/img/logo_it.png",
+            "width": 200,
+            "height": 60
+          },
+          "email": "info@itfusion.kz",
+          "telephone": "+7 (776) 429-03-00",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Казахстана, 92-59",
+            "addressLocality": "Усть-Каменогорск",
+            "addressCountry": "KZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.948033,
+            "longitude": 82.628175
+          },
+          "description": "IT Fusion - ведущая IT-компания в Казахстане, специализирующаяся на внедрении CRM систем, автоматизации бизнеса, веб-разработке и AI-решениях.",
+          "foundingDate": "2021",
+          "sameAs": [
+            "https://www.instagram.com/itfusionkz"
+          ],
+          "knowsAbout": [
+            "CRM внедрение",
+            "Битрикс24",
+            "Автоматизация бизнеса", 
+            "Веб-разработка",
+            "AI ассистенты",
+            "Telegram боты",
+            "SEO оптимизация"
+          ],
+          "serviceArea": {
+            "@type": "Country",
+            "name": "Казахстан"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://itfusion.kz/#website",
+          "url": "https://itfusion.kz/",
+          "name": "IT Fusion",
+          "description": "Инновационные IT-решения для бизнеса: CRM, автоматизация, веб-разработка, AI-ассистенты",
+          "publisher": {
+            "@id": "https://itfusion.kz/#organization"
+          },
+          "inLanguage": "ru-RU",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://itfusion.kz/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        <?php if ($pageName === 'index'): ?>
+        ,{
+          "@type": "LocalBusiness",
+          "@id": "https://itfusion.kz/#localbusiness",
+          "name": "IT Fusion",
+          "description": "Профессиональные IT-услуги в Усть-Каменогорске: внедрение CRM, автоматизация, веб-разработка",
+          "url": "https://itfusion.kz/",
+          "telephone": "+7 (776) 429-03-00",
+          "email": "info@itfusion.kz",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Казахстана, 92-59",
+            "addressLocality": "Усть-Каменогорск",
+            "addressCountry": "KZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.948033,
+            "longitude": 82.628175
+          },
+          "openingHours": "Mo-Fr 09:00-18:00",
+          "priceRange": "$$",
+          "image": "https://itfusion.kz/img/logo_it.png",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "IT Услуги",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Внедрение CRM систем",
+                  "description": "Профессиональное внедрение и настройка CRM систем Bitrix24"
+                }
+              },
+              {
+                "@type": "Offer", 
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Веб-разработка",
+                  "description": "Создание современных сайтов и веб-приложений"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service", 
+                  "name": "AI-ассистенты",
+                  "description": "Внедрение умных помощников и чат-ботов"
+                }
+              }
+            ]
+          }
+        }
+        <?php endif; ?>
+        <?php if ($pageName === 'contact'): ?>
+        ,{
+          "@type": "ContactPage",
+          "@id": "https://itfusion.kz/contact.php#contactpage",
+          "name": "Контакты IT Fusion",
+          "description": "Свяжитесь с IT Fusion для получения консультации по IT-решениям",
+          "mainEntity": {
+            "@id": "https://itfusion.kz/#organization"
+          }
+        }
+        <?php endif; ?>
       ]
+    }
+    </script>
     }
     </script>
     <!-- Schema.org BreadcrumbList -->

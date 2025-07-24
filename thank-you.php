@@ -1,5 +1,5 @@
 <?php
-    $pageTitle = "Спасибо за вашу заявку! - QazaQ Core";
+    $pageTitle = "Спасибо за вашу заявку! - IT Fusion";
     $pageDescription = "Ваша заявка принята. Скоро мы с вами свяжемся.";
     $pageName = "thank-you";?>
 

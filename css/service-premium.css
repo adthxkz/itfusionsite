@@ -1228,3 +1228,62 @@ a.enhanced-feature-card:active {
         padding-left: 30px; /* Возвращаем отступ */
     }
 }
+
+/* =============
+   CRM PAGE FIXES - Simple and Clean
+   ============= */
+
+/* Fix process cards visibility on dark background */
+.premium-process .process-step {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.premium-process .process-step:hover {
+    background: rgba(255, 255, 255, 1) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Fix text colors inside process cards */
+.premium-process .step-content h3 {
+    color: #1f2937 !important;
+}
+
+.premium-process .step-content p {
+    color: #4b5563 !important;
+}
+
+.premium-process .step-deliverables li {
+    color: #374151 !important;
+}
+
+.premium-process .step-deliverables li::before {
+    color: #059669 !important;
+}
+
+.premium-process .step-duration {
+    color: #2563EB !important;
+}
+
+/* Fix guarantee section */
+.premium-process .guarantee-content {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.premium-process .guarantee-content i {
+    color: #10B981 !important;
+}
+
+.premium-process .guarantee-content h3 {
+    color: #1f2937 !important;
+}
+
+.premium-process .guarantee-content p {
+    color: #4b5563 !important;
+}

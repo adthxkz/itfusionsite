@@ -52,6 +52,7 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .hero-badge.premium-badge {
@@ -83,6 +84,8 @@
     color: rgba(255,255,255,0.9);
     margin-bottom: 50px;
     max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-features {
@@ -90,6 +93,7 @@
     gap: 30px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-features .feature-item {

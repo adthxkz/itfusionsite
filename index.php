@@ -57,57 +57,57 @@
             </div>
             
             <div class="enhanced-feature-grid">
-                <div class="enhanced-feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <a href="/crm-implementation.php" class="enhanced-feature-card" data-aos="zoom-in" data-aos-delay="100" style="text-decoration: none; color: inherit; display: block;">
                     <div class="card-background"></div>
                     <div class="feature-icon-enhanced">
                         <i class="fas fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <h4><a href="/crm-implementation.php">CRM + Автоматизация</a></h4>
+                    <h4>CRM + Автоматизация</h4>
                     <p>Превращаем хаотичные продажи в систему с полной автоматизацией воронки на базе CRM и AI-помощниками</p>
                     <div class="card-features">
                         <span><i class="fas fa-check"></i> Bitrix24</span>
                         <span><i class="fas fa-check"></i> AI-боты</span>
                         <span><i class="fas fa-check"></i> Аналитика</span>
                     </div>
-                    <a href="/crm-implementation.php" class="card-link">
+                    <div class="card-link">
                         Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 
-                <div class="enhanced-feature-card featured-card" data-aos="zoom-in" data-aos-delay="200">
+                <a href="/web-development.php" class="enhanced-feature-card featured-card" data-aos="zoom-in" data-aos-delay="200" style="text-decoration: none; color: inherit; display: block;">
                     <div class="card-background"></div>
                     <div class="featured-badge">Популярно</div>
                     <div class="feature-icon-enhanced">
                         <i class="fas fa-code" aria-hidden="true"></i>
                     </div>
-                    <h4><a href="/web-development.php">Веб-разработка</a></h4>
+                    <h4>Веб-разработка</h4>
                     <p>Создаем сайты и веб-приложения, которые интегрируются с вашими бизнес-процессами и CRM</p>
                     <div class="card-features">
                         <span><i class="fas fa-check"></i> Сайты</span>
                         <span><i class="fas fa-check"></i> SEO</span>
                         <span><i class="fas fa-check"></i> Интеграции</span>
                     </div>
-                    <a href="/web-development.php" class="card-link">
+                    <div class="card-link">
                         Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 
-                <div class="enhanced-feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <a href="/ai-assistants.php" class="enhanced-feature-card" data-aos="zoom-in" data-aos-delay="300" style="text-decoration: none; color: inherit; display: block;">
                     <div class="card-background"></div>
                     <div class="feature-icon-enhanced">
                         <i class="fas fa-robot" aria-hidden="true"></i>
                     </div>
-                    <h4><a href="/ai-assistants.php">AI-Ассистенты</a></h4>
+                    <h4>AI-Ассистенты</h4>
                     <p>Внедряем умных помощников для автоматизации рутинных задач и повышения эффективности</p>
                     <div class="card-features">
                         <span><i class="fas fa-check"></i> ChatGPT</span>
                         <span><i class="fas fa-check"></i> Telegram-боты</span>
                         <span><i class="fas fa-check"></i> Автоответы</span>
                     </div>
-                    <a href="/ai-assistants.php" class="card-link">
+                    <div class="card-link">
                         Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
             
             <div class="competencies-cta" data-aos="fade-up" data-aos-delay="500">

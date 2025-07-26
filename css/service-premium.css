@@ -608,3 +608,47 @@ a.service-overview-card:active {
     text-decoration: none !important;
     color: inherit !important;
 }
+
+/* Homepage Enhanced Feature Cards */
+a.enhanced-feature-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+a.enhanced-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+a.enhanced-feature-card:hover .feature-icon-enhanced {
+    transform: scale(1.1);
+}
+
+a.enhanced-feature-card:hover .feature-icon-enhanced i {
+    color: #667eea;
+}
+
+a.enhanced-feature-card:hover h4 {
+    color: #667eea;
+}
+
+a.enhanced-feature-card:hover .card-link {
+    color: #667eea;
+    font-weight: 700;
+}
+
+a.enhanced-feature-card:hover .card-features span {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+a.enhanced-feature-card:focus,
+a.enhanced-feature-card:active {
+    text-decoration: none !important;
+    color: inherit !important;
+    outline: none;
+}

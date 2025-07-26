@@ -1139,3 +1139,88 @@ a.enhanced-feature-card:active {
         max-width: 100%;
     }
 }
+
+/* ======================================== */
+/* ИСПРАВЛЕНИЯ ДЛЯ СТРАНИЦЫ CRM-IMPLEMENTATION */
+/* ======================================== */
+
+/* 1. Добавляем отступ для секции с услугами */
+.crm-services-section {
+    padding-top: 100px;
+}
+
+/* 2. Полностью переписываем стили для секции процесса */
+
+/* Убираем старые стили линии */
+.process-timeline::before {
+    display: none;
+}
+
+/* Делаем timeline простым блочным контейнером */
+.process-timeline {
+    max-width: 1000px; /* Немного увеличим ширину для 2 колонок */
+    margin-top: 60px;
+    display: grid; /* Используем Grid для вёрстки */
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    gap: 30px; /* Промежуток между колонками */
+}
+
+/* Убираем все сложные позиционирования у шага процесса */
+.process-step {
+    display: flex;
+    flex-direction: column; /* Элементы внутри карточки идут друг за другом */
+    margin-bottom: 0; /* Убираем лишний отступ */
+    background: #ffffff; /* Добавляем фон */
+    border-radius: 16px; /* Скругляем углы */
+    padding: 30px; /* Внутренние отступы */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Тень */
+    border: 1px solid #e5e7eb;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Убираем ненужное свойство для четных элементов */
+.process-step:nth-child(even) {
+    flex-direction: column;
+}
+.process-step:nth-child(even) .step-content {
+    text-align: left;
+}
+
+/* Стили для номера этапа */
+.step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 0 0 20px 0; /* Отступ снизу */
+}
+
+.step-content {
+    max-width: none; /* Убираем ограничение ширины */
+}
+
+/* Стили для иконки внутри шага */
+.step-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .process-timeline {
+        grid-template-columns: 1fr; /* На мобильных будет одна колонка */
+    }
+    .step-content {
+        max-width: 100%;
+    }
+    .process-step {
+        padding-left: 30px; /* Возвращаем отступ */
+    }
+}

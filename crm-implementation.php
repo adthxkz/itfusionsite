@@ -8,6 +8,9 @@
     include 'header.php';
 ?>
 
+<!-- Подключаем CSS для финальной полировки дизайна -->
+<link rel="stylesheet" href="/css/crm-polish.css">
+
 <main>
     <section class="service-hero premium-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
         <div class="hero-particles"></div>
@@ -236,12 +239,8 @@
             
             <div class="process-timeline">
                 <div class="process-step" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-number">1</div>
                     <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Аудит & Анализ</h3>
+                        <h3 data-step-number="1" data-icon="fas fa-search">Аудит & Анализ</h3>
                         <p>Глубокий анализ ваших продаж, выявление точек роста и узких мест</p>
                         <ul class="step-deliverables">
                             <li>Карта текущих процессов</li>
@@ -253,12 +252,8 @@
                 </div>
 
                 <div class="process-step" data-aos="fade-up" data-aos-delay="200">
-                    <div class="step-number">2</div>
                     <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Настройка & Конфигурация</h3>
+                        <h3 data-step-number="2" data-icon="fas fa-cogs">Настройка & Конфигурация</h3>
                         <p>Техническое внедрение CRM с настройкой под ваши бизнес-процессы</p>
                         <ul class="step-deliverables">
                             <li>Настройка воронок и полей</li>
@@ -270,12 +265,8 @@
                 </div>
 
                 <div class="process-step" data-aos="fade-up" data-aos-delay="300">
-                    <div class="step-number">3</div>
                     <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Автоматизация & AI</h3>
+                        <h3 data-step-number="3" data-icon="fas fa-robot">Автоматизация & AI</h3>
                         <p>Внедрение роботов, автоматических процессов и AI-помощников</p>
                         <ul class="step-deliverables">
                             <li>Бизнес-процессы и триггеры</li>
@@ -287,12 +278,8 @@
                 </div>
 
                 <div class="process-step" data-aos="fade-up" data-aos-delay="400">
-                    <div class="step-number">4</div>
                     <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Обучение & Запуск</h3>
+                        <h3 data-step-number="4" data-icon="fas fa-graduation-cap">Обучение & Запуск</h3>
                         <p>Обучение команды, тестирование и запуск системы в работу</p>
                         <ul class="step-deliverables">
                             <li>Обучение сотрудников</li>
@@ -306,8 +293,10 @@
 
             <div class="process-guarantee" data-aos="fade-up" data-aos-delay="500">
                 <div class="guarantee-content">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Гарантия результата</h3>
+                    <div class="guarantee-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Гарантия результата</h3>
+                    </div>
                     <p>Если CRM не увеличит эффективность продаж на 25% в первые 3 месяца - вернем деньги</p>
                 </div>
             </div>

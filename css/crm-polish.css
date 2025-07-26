@@ -1,0 +1,404 @@
+/* =========================================
+   CRM PAGE DESIGN POLISH - FINAL TOUCHES
+   Финальная полировка дизайна для идеального выравнивания
+   ========================================= */
+
+/* =========================================
+   1. НОВЫЙ ПОДХОД К КАРТОЧКАМ ЭТАПОВ ПРОЦЕССА
+   Использование data-атрибутов и псевдоэлементов
+   ========================================= */
+
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-step {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%; /* Равная высота карточек */
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.step-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Новая стилизация заголовка с номером через data-атрибут */
+.step-content h3[data-step-number] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 1rem 0;
+    padding-left: 0; /* Убираем отступ, так как номер теперь часть заголовка */
+}
+
+/* Создаем стилизованный номер через псевдоэлемент */
+.step-content h3[data-step-number]::before {
+    content: attr(data-step-number);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #2563EB, #06B6D4);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+/* Добавляем иконку после номера */
+.step-content h3[data-step-number]::after {
+    content: '';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(6, 182, 212, 0.1));
+    border-radius: 0.75rem;
+    color: #06B6D4;
+    font-size: 1.3rem;
+    margin-left: auto;
+}
+
+/* Иконки для каждого этапа */
+.step-content h3[data-icon="fas fa-search"]::after { content: '\f002'; }
+.step-content h3[data-icon="fas fa-cogs"]::after { content: '\f085'; }
+.step-content h3[data-icon="fas fa-robot"]::after { content: '\f544'; }
+.step-content h3[data-icon="fas fa-graduation-cap"]::after { content: '\f19d'; }
+
+.step-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.step-deliverables {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1; /* Занимает все доступное пространство */
+}
+
+.step-deliverables li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+}
+
+.step-deliverables li::before {
+    content: '•';
+    color: #06B6D4;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.step-duration {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(6, 182, 212, 0.05));
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 50px;
+    color: #60A5FA;
+    font-size: 0.8rem;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-top: auto; /* Прижимаем к низу */
+}
+
+/* =========================================
+   2. ИСПРАВЛЕНИЕ БЛОКА ГАРАНТИИ
+   Идеальное выравнивание иконки и заголовка
+   ========================================= */
+
+.process-guarantee {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.guarantee-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.guarantee-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.guarantee-header i {
+    font-size: 3rem;
+    color: #10B981;
+}
+
+.guarantee-header h3 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.guarantee-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 500px;
+}
+
+/* =========================================
+   3. ИСПРАВЛЕНИЕ СПИСКОВ С ГАЛОЧКАМИ
+   Идеальное выравнивание иконок и текста
+   ========================================= */
+
+/* Секция "Что вы получите после внедрения" */
+.features-list .feature-item {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верху для многострочного текста */
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);
+    border-radius: 0.75rem;
+    border: 1px solid #E2E8F0;
+    transition: all 0.3s ease;
+}
+
+.features-list .feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: #2563EB;
+}
+
+.feature-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #059669, #10B981);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.125rem; /* Небольшая корректировка для выравнивания с первой строкой */
+}
+
+.feature-check i {
+    color: white;
+    font-size: 1rem;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h4 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+}
+
+.feature-content p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* =========================================
+   4. ИСПРАВЛЕНИЕ БЛОКА КОНТАКТОВ
+   Идеальное выравнивание иконок и текста
+   ========================================= */
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: #334155;
+    transition: all 0.3s ease;
+}
+
+.contact-option:hover {
+    background: #F1F5F9;
+    border-color: #2563EB;
+    transform: translateY(-2px);
+    color: #334155;
+}
+
+.contact-option i {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563EB, #06B6D4);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-option div {
+    flex: 1;
+}
+
+.contact-option strong {
+    display: block;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 0.25rem;
+}
+
+.contact-option span {
+    font-size: 0.875rem;
+    color: #64748B;
+}
+
+/* =========================================
+   5. ДОПОЛНИТЕЛЬНЫЕ ИСПРАВЛЕНИЯ ДЛЯ CTA
+   Улучшение списка преимуществ
+   ========================================= */
+
+.cta-benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.cta-benefits-list .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cta-benefits-list .benefit-item i {
+    color: #059669;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.cta-benefits-list .benefit-item span {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* =========================================
+   АДАПТИВНЫЙ ДИЗАЙН
+   ========================================= */
+
+@media (max-width: 768px) {
+    .process-timeline {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .step-content {
+        padding: 1.5rem;
+    }
+    
+    .step-content h3[data-step-number] {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        text-align: left;
+    }
+    
+    .step-content h3[data-step-number]::after {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .guarantee-header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .guarantee-header i {
+        font-size: 2.5rem;
+    }
+    
+    .contact-option {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-list .feature-item {
+        padding: 1rem;
+    }
+    
+    .step-content h3[data-step-number] {
+        font-size: 1.1rem;
+    }
+    
+    .step-content h3[data-step-number]::before {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .step-content h3[data-step-number]::after {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+}

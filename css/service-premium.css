@@ -312,3 +312,42 @@
         max-width: none;
     }
 }
+
+/* IT Solutions Service Cards */
+.service-overview-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-overview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.service-overview-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-overview-card:hover .service-icon i {
+    color: #667eea;
+}
+
+.service-overview-card:hover h4 {
+    color: #667eea;
+}
+
+.service-overview-card:hover .service-tags span {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Ensure no text decoration on linked cards */
+a.service-overview-card,
+a.service-overview-card:hover,
+a.service-overview-card:focus,
+a.service-overview-card:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}

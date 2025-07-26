@@ -40,7 +40,7 @@
             </div>
             
             <div class="services-grid">
-                <div class="service-overview-card" data-aos="zoom-in" data-aos-delay="100">
+                <a href="/crm-implementation.php" class="service-overview-card" data-aos="zoom-in" data-aos-delay="100" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">01</div>
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
@@ -52,9 +52,9 @@
                         <span>AI-боты</span>
                         <span>Аналитика</span>
                     </div>
-                </div>
+                </a>
                 
-                <div class="service-overview-card featured-service" data-aos="zoom-in" data-aos-delay="200">
+                <a href="/web-development.php" class="service-overview-card featured-service" data-aos="zoom-in" data-aos-delay="200" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">02</div>
                     <div class="service-icon">
                         <i class="fas fa-code"></i>
@@ -66,9 +66,9 @@
                         <span>E-commerce</span>
                         <span>SEO</span>
                     </div>
-                </div>
+                </a>
                 
-                <div class="service-overview-card" data-aos="zoom-in" data-aos-delay="300">
+                <a href="/ai-assistants.php" class="service-overview-card" data-aos="zoom-in" data-aos-delay="300" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">03</div>
                     <div class="service-icon">
                         <i class="fas fa-robot"></i>
@@ -80,9 +80,9 @@
                         <span>Telegram</span>
                         <span>24/7</span>
                     </div>
-                </div>
+                </a>
                 
-                <div class="service-overview-card" data-aos="zoom-in" data-aos-delay="400">
+                <a href="/mobile-app-development.php" class="service-overview-card" data-aos="zoom-in" data-aos-delay="400" style="text-decoration: none; color: inherit; display: block;">
                     <div class="service-number">04</div>
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
@@ -94,7 +94,7 @@
                         <span>Android</span>
                         <span>PWA</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>

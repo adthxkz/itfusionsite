@@ -154,6 +154,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="crm-services-section">
@@ -307,20 +308,6 @@
                     <i class="fas fa-shield-alt"></i>
                     <h3>Гарантия результата</h3>
                     <p>Если CRM не увеличит эффективность продаж на 25% в первые 3 месяца - вернем деньги</p>
-                </div>
-            </div>
-        </div>
-    </section>
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="step-number">04</div>
-                    <h4>Обучение команды</h4>
-                    <p>Проводим тренинги для каждой роли, чтобы все понимали, как работать с CRM</p>
-                    <ul class="step-details">
-                        <li>Обучение менеджеров</li>
-                        <li>Тренинг для руководителей</li>
-                        <li>Инструкции и чек-листы</li>
-                    </ul>
                 </div>
             </div>
         </div>

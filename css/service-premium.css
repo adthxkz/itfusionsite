@@ -178,25 +178,48 @@
 
 .proof-stats {
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: flex-start;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
 }
 
 .stat-item {
     text-align: center;
+    flex: 1;
 }
 
 .stat-item strong {
     display: block;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
 
 .stat-item span {
     font-size: 14px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
+    display: block;
+    line-height: 1.3;
+}
+
+.stat-item .stat-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.stat-item .stat-sublabel {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 2px;
 }
 
 .hero-visual {
@@ -483,11 +506,22 @@
     }
     
     .proof-stats {
-        gap: 20px;
+        gap: 15px;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+    
+    .stat-item {
+        margin-bottom: 15px;
+    }
+    
+    .stat-item:last-child {
+        margin-bottom: 0;
     }
     
     .stat-item strong {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -526,21 +560,28 @@
     .hero-features {
         flex-direction: column;
         gap: 15px;
+        align-items: center;
     }
     
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     
     .proof-stats {
         flex-direction: column;
         gap: 15px;
+        margin-top: 30px;
     }
     
     .service-hero.premium-hero {
         min-height: auto;
         padding: 80px 0;
+    }
+    
+    .hero-visual {
+        margin-top: 40px;
     }
     
     .process-timeline::before {

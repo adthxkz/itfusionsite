@@ -61,15 +61,16 @@
                             <span>Довольных клиентов</span>
                         </div>
                         <div class="stat-item">
-                            <strong>30 дней</strong>
-                            <span>До полного запуска</span>
+                            <strong>30</strong>
+                            <span class="stat-label">дней</span>
+                            <span class="stat-sublabel">До полного запуска</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
-            <img src="/img/crm-img.webp" alt="CRM система интерфейс" class="hero-image">
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+                <img src="/img/crm-img.webp" alt="CRM система интерфейс" class="hero-image">
+            </div>
         </div>
     </section>
 

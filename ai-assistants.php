@@ -266,7 +266,6 @@
             </div>
         </div>
     </section>
-    </section>
 
     <section class="ai-process-section">
         <div class="container">

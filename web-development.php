@@ -213,7 +213,6 @@
             </div>
         </div>
     </section>
-    </section>
 
     <section class="web-process-section">
         <div class="container">
